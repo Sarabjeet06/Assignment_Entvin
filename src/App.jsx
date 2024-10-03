@@ -8,7 +8,9 @@ import ReportComp from './components/ReportComp';
 function App() {
   return (
     <div className='flex h-screen'>
-      <Sidemenu />
+      <div className="w-64 bg-gray-200"> {/* Set width and background color */}
+        <Sidemenu />
+      </div>
       <div className='flex-1'>
         <ReportComp />
       </div>

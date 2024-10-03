@@ -40,7 +40,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-
 const data = {
   'GlaxoSmithKline Pharmaceuticals': [
     {
@@ -478,60 +477,31 @@ const data = {
   ],
 };
 
-let rows=[];
+let rows = [];
 
 // CustomTable component
 const CustomTable = ({ selectedOption, searchValue }) => {
   rows = data[selectedOption.name];
   console.log(rows);
 
-  // useEffect(()=>{
-  //   const results = [];
-  //   for (const key in data) {
-  //     // Filter the items in each category based on name and category
-  //     const filteredItems = data[key].filter(item => 
-  //       item.name.toLowerCase().includes(lowerCaseTerm) ||
-  //       item.desc.toLowerCase().includes(lowerCaseTerm)
-  //     );
-  
-  //     // If there are matching items, add them to the results array
-  //     if (filteredItems.length > 0) {
-  //       results.push(...filteredItems); // Spread operator to add items from filteredItems
-  //     }
-  //   }
-  //   rows=results;
-  // },[searchValue])
+  useEffect(() => {
+    const results = [];
+    // Example search implementation here (commented out as per your original code)
+    console.log("Hello");
+    console.log(searchValue);
+  }, [searchValue]);
 
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table sx={{ minWidth: 700, tableLayout: 'fixed' }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell sx={{
-              width: '80px',
-              height: '46px'
-            }}>S. No</StyledTableCell> {/* Serial number column */}
-            <StyledTableCell sx={{
-              width: '326px',
-              height: '46px !important'
-            }}>Company (Innovator)</StyledTableCell>
-            <StyledTableCell align="left" sx={{
-              width: '162px',
-              height: '46px '
-            }}>2023 Revenue ($M)</StyledTableCell>
-            <StyledTableCell align="left" sx={{
-              width: '80px ',
-              height: '46px '
-            }}>2022 Revenue ($M)</StyledTableCell>
-            <StyledTableCell align="left" sx={{
-              backgroundColor: '#7CC8FD !important', 
-              width: '300px',
-              height: '46px '
-            }} >R&D pipeline - Approved</StyledTableCell>
-            <StyledTableCell align="left" sx={{
-              backgroundColor: '#B9E0FE !important', width: '300px ',
-              height: '46px '
-            }}>R&D pipeline</StyledTableCell>
+            <StyledTableCell sx={{ width: '80px', height: '46px' }}>S. No</StyledTableCell> {/* Serial number column */}
+            <StyledTableCell sx={{ width: '326px', height: '46px' }}>abc</StyledTableCell>
+            <StyledTableCell align="left" sx={{ width: '162px', height: '46px' }}>abc</StyledTableCell>
+            <StyledTableCell align="left" sx={{ width: '80px', height: '46px' }}>abc</StyledTableCell>
+            <StyledTableCell align="left" sx={{ backgroundColor: '#7CC8FD !important', width: '300px', height: '46px' }}>abc</StyledTableCell>
+            <StyledTableCell align="left" sx={{ backgroundColor: '#B9E0FE !important', width: '300px', height: '46px' }}>abc</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -541,7 +511,7 @@ const CustomTable = ({ selectedOption, searchValue }) => {
                 {row.sno.value}
               </StyledTableCell>
               <StyledTableCell>
-                {row?.company?.imgSrc && <img src={row?.company?.imgSrc} />}
+                {row?.company?.imgSrc && <img src={row?.company?.imgSrc} style={{ width: '50px', height: '50px' }} alt={row.company.name} />}
                 <div>{row?.company?.name}</div>
                 <div>{row?.company?.desc}</div>
               </StyledTableCell>
@@ -555,7 +525,7 @@ const CustomTable = ({ selectedOption, searchValue }) => {
               >
                 <div>
                   <div>{row?.revenue23?.value}</div>
-                  {row?.revenue23?.imgSrc && <img src={row?.revenue23?.imgSrc} />}
+                  {row?.revenue23?.imgSrc && <img src={row?.revenue23?.imgSrc} style={{ width: '20px', height: '20px' }} alt="Revenue icon" />}
                 </div>
                 <div>{row.revenue23.curr}</div>
               </StyledTableCell>
@@ -566,7 +536,7 @@ const CustomTable = ({ selectedOption, searchValue }) => {
                 <div>{row?.revenue22?.curr}</div>
               </StyledTableCell>
               <StyledTableCell align="left">
-                {row?.approved?.imgSrc && <img src={row?.approved?.imgSrc} alt={row?.approved?.altValue} />}
+                {row?.approved?.imgSrc && <img src={row?.approved?.imgSrc} alt={row?.approved?.altValue} style={{ width: '20px', height: '20px' }} />}
                 <div>{row?.approved?.name}</div>
                 <div>{row?.approved?.desc}</div>
               </StyledTableCell>
