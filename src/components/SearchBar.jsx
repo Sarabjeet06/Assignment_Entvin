@@ -2,7 +2,7 @@ import React from 'react';
 import SearchIcon from '../assets/searchIcon.svg';
 
 const SearchBar = ({searchValue, setSearchValue}) => {
-  function handleSearch(){
+  function handleSearch(e){
     setSearchValue(e.target.value);
   }
   return (
@@ -12,7 +12,7 @@ const SearchBar = ({searchValue, setSearchValue}) => {
           type="text"
           placeholder="Search drug name"
           className="flex-grow h-full border-none outline-none placeholder:text-gray-400"
-          
+          onChange={handleSearch}
         />
       </div>
   );

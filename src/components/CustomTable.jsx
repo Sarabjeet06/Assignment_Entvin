@@ -46,16 +46,16 @@ const data = {
       sno: {
         value: 1,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_1,
-        alt: 'GlaxoSmithKline Pharmaceuticals',
+        altValue: 'GlaxoSmithKline Pharmaceuticals',
         name: 'Shingrix',
         desc: 'Chronic rhinosinusitis with nasal polyps (CRSwNP)',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '3,400',
         curr: ' Euro Million',
         profit: 'up',
@@ -74,16 +74,16 @@ const data = {
       sno: {
         value: 2,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_1,
-        alt: 'GlaxoSmithKline Pharmaceuticals',
+        altValue: 'GlaxoSmithKline Pharmaceuticals',
         name: 'Trelegy Ellipta',
         desc: 'HER2+ Adjuvant Breast Cancer (CompassHER2 RD)',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '22,00',
         curr: 'Euro Million',
         profit: 'up',
@@ -101,16 +101,16 @@ const data = {
       sno: {
         value: 3,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_1,
-        alt: 'GlaxoSmithKline Pharmaceuticals',
+        altValue: 'GlaxoSmithKline Pharmaceuticals',
         name: 'Dovato',
         desc: 'Active immunization for the prevention of varicella in individuals 12 months of age and older',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '12,206',
         curr: '$ Dollar Million',
         profit: 'up',
@@ -190,17 +190,17 @@ const data = {
       sno: {
         value: 1,
         imgSrc: '',
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_4,
-        alt: '',
+        altValue: '',
         name: 'Bristol Myers Suibb',
         name2: 'Eliquis',
         desc: 'Secondary Stroke Prevention',
       }, revenue23: {
         imgSrc: '',
-        alt: '',
+        altValue: '',
         value: '12,206',
         curr: '$ Dollar Million',
         profit: 'up',
@@ -219,17 +219,17 @@ const data = {
       sno: {
         value: 2,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_4,
-        alt: '',
+        altValue: '',
         name: 'Bristol Myers Suibb',
         name2: 'Opdivo',
         desc: 'Respiratory syncytial virus prophylaxis in adult population 18-49 years of age at increased risk',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '12,206',
         curr: '$ Dollar Million',
         profit: 'up',
@@ -247,17 +247,17 @@ const data = {
       sno: {
         value: 3,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_4,
-        alt: '',
+        altValue: '',
         name: 'Bristol Myers Suibb',
         name2: 'Orencia',
         desc: 'metastatic castration-resistant prostate cancer (mCRPC)',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '3,601',
         curr: '$ Dollar Million',
         profit: 'up',
@@ -278,16 +278,16 @@ const data = {
       sno: {
         value: 1,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_5,
-        alt: '',
+        altValue: '',
         name: 'Ocrevus',
         desc: '1L HER2+ Metastatic Colorectal Cancer (MOUNTAINEER-03)',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '6,031',
         curr: 'Fr. CHF Million',
         profit: 'up',
@@ -306,16 +306,16 @@ const data = {
       sno: {
         value: 2,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_5,
-        alt: '',
+        altValue: '',
         name: 'Hemlibra',
         desc: 'spinal muscular atrophy (SMA) pediatric <2 months',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '4,147',
         curr: 'Fr. CHF Million',
         profit: 'up',
@@ -333,16 +333,16 @@ const data = {
       sno: {
         value: 3,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_5,
-        alt: '',
+        altValue: '',
         name: 'Perjeta',
         desc: 'Obstructive Hypertrophic Cardiomyopathy',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '3,768',
         curr: 'Fr. CHF Million',
         profit: 'down',
@@ -363,16 +363,16 @@ const data = {
       sno: {
         value: 1,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_6,
-        alt: 'Novo Nordisk',
+        altValue: 'Novo Nordisk',
         name: 'Ozempic',
         desc: '- Improves glycemic control in adults with type 2 diabetes mellitus.- Reduces the risk of major adverse cardiovascular events in adults with type 2 diabetes mellitus and established cardiovascular disease.- Not for use in patients with type 1 diabetes mellitus or a history of pancreatitis.',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '95,718',
         curr: 'kr. DKK Million',
         profit: 'up',
@@ -391,16 +391,16 @@ const data = {
       sno: {
         value: 2,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_6,
-        alt: 'Novo Nordisk',
+        altValue: 'Novo Nordisk',
         name: 'Wegovy',
         desc: '- Reduce risk of major adverse cardiovascular events in adults with established cardiovascular disease and either obesity or overweight.- Reduce excess body weight and maintain weight reduction long term in adults and pediatric patients aged 12 years and older with obesity.- Reduce excess body weight and maintain weight reduction long term in adults with overweight in the presence of at least one weight related comorbid condition.',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '31,343',
         curr: 'kr. DKK Million',
         profit: 'up',
@@ -421,16 +421,16 @@ const data = {
       sno: {
         value: 1,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: '',
       }, company: {
         imgSrc: Medicine_2,
-        alt: '',
+        altValue: '',
         name: 'Trulicity',
         desc: '- Improve glycemic control in adults and pediatric patients with type 2 diabetes mellitus.- Reduce the risk of major adverse cardiovascular events in adults with type 2 diabetes mellitus with established cardiovascular disease or multiple cardiovascular risk factors.',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '7,132',
         curr: '$ Dollar Million',
         profit: 'down',
@@ -449,17 +449,17 @@ const data = {
       sno: {
         value: 2,
         imgSrc: null,
-        alt: '',
+        altValue: '',
         profit: 'up',
       }, company: {
         imgSrc: Medicine_6,
-        alt: '',
+        altValue: '',
         name: 'Bristol Myers Suibb',
         name2: 'Eliquis',
         desc: 'Secondary Stroke Prevention',
       }, revenue23: {
         imgSrc: null,
-        alt: '',
+        altValue: '',
         value: '5,163',
         curr: '$ Dollar Million',
         profit: 'up',
@@ -478,16 +478,33 @@ const data = {
 };
 
 let rows = [];
+let allRows = [];
 
 // CustomTable component
 const CustomTable = ({ selectedOption, searchValue }) => {
-  rows = data[selectedOption.name];
-  console.log(rows);
+
+  useEffect(()=>{
+    rows = data[selectedOption.name];
+  },[])
 
   useEffect(() => {
     const results = [];
-    // Example search implementation here (commented out as per your original code)
-    console.log("Hello");
+    const filteredItems = rows.filter((item) => {
+      console.log(item);
+      return (item.company.name.toLowerCase().includes(searchValue) ||
+        item.company.desc.toLowerCase().includes(searchValue) ||
+        item.company.altValue.toLowerCase().includes(searchValue))
+    }
+    );
+
+    rows = filteredItems;
+    console.log(filteredItems);
+
+
+    //   if (filteredItems.length > 0) {
+    //     results.push(...filteredItems); // Spread operator to add items from filteredItems
+    //   }
+    // console.log(results);
     console.log(searchValue);
   }, [searchValue]);
 
@@ -505,13 +522,13 @@ const CustomTable = ({ selectedOption, searchValue }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row, index) => (
+          {rows && rows.map((row, index) => (
             <StyledTableRow key={row.name}>
               <StyledTableCell component="th" scope="row">
                 {row.sno.value}
               </StyledTableCell>
               <StyledTableCell>
-                {row?.company?.imgSrc && <img src={row?.company?.imgSrc} style={{ width: '50px', height: '50px' }} alt={row.company.name} />}
+                {row?.company?.imgSrc && <img src={row?.company?.imgSrc} alt={row?.company.altValue} style={{ width: '50px', height: '50px' }} />}
                 <div>{row?.company?.name}</div>
                 <div>{row?.company?.desc}</div>
               </StyledTableCell>
