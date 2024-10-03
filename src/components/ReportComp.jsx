@@ -53,7 +53,7 @@ const ReportComp = () => {
     const [searchValue , setSearchValue]=  useState('');
 
     return (
-        <div className='flex flex-col w-full px-6'>
+        <div className='flex flex-col w-[1118px] px-6'>
             <div className='flex justify-between items-center h-[52px] mt-[48px]'>
                 <h1 className='text-[24px] font-medium leading-[32px] text-left'>
                     Portfolio Strategy Report

@@ -515,7 +515,7 @@ const CustomTable = ({ selectedOption, searchValue }) => {
 
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700, tableLayout: 'fixed' }} aria-label="customized table">
+      <Table sx={{ width: '1118px', tableLayout: 'fixed' }} aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell sx={{ width: '80px', height: '46px' }}>S. No</StyledTableCell> {/* Serial number column */}

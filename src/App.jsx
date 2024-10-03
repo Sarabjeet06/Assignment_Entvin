@@ -8,10 +8,10 @@ import ReportComp from './components/ReportComp';
 function App() {
   return (
     <div className='flex h-screen'>
-      <div className="bg-gray-200"> {/* Set width and background color */}
+      <div className="bg-gray-200 w-[274px]"> {/* Ensure fixed width for Sidemenu */}
         <Sidemenu />
       </div>
-      <div className='flex-1 ml-[24px]'>
+      <div className='flex-1'> {/* Use flex-grow instead of margins */}
         <ReportComp />
       </div>
     </div>
