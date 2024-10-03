@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -477,25 +477,32 @@ const data = {
   ],
 };
 
-let rows = [];
-let allRows = [];
 
 // CustomTable component
 const CustomTable = ({ selectedOption, searchValue }) => {
 
-  rows = data[selectedOption.name];
+  const temp=data[selectedOption.name];
+  console.log(temp);
+  const [rows,setRows]=useState(temp);
+
+  useEffect(()=>{
+    setRows(data[selectedOption.name]);
+  },[selectedOption])
 
   useEffect(() => {
-    const results = [];
-    const filteredItems = rows.filter((item) => {
+    console.log("First time it is working");
+    const filteredItems = data[selectedOption.name].filter((item) => {
       console.log(item);
       return (item.company.name.toLowerCase().includes(searchValue) ||
         item.company.desc.toLowerCase().includes(searchValue) ||
-        item.company.altValue.toLowerCase().includes(searchValue))
+        item.company.altValue.toLowerCase().includes(searchValue)||
+        item.revenue23.value.toLowerCase().includes(searchValue)||
+        item.revenue22.value.toLowerCase().includes(searchValue)
+      )
     }
     );
 
-    rows = filteredItems;
+    setRows(filteredItems);
     console.log(filteredItems);
 
 

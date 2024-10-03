@@ -47,6 +47,7 @@ const ReportComp = () => {
             name: 'Eli lilly',
         },
     ];
+    
 
     const [selectedOption, setSelectedOption] = useState(options[1]);
     const [searchValue , setSearchValue]=  useState('');
