@@ -483,9 +483,7 @@ let allRows = [];
 // CustomTable component
 const CustomTable = ({ selectedOption, searchValue }) => {
 
-  useEffect(()=>{
-    rows = data[selectedOption.name];
-  },[])
+  rows = data[selectedOption.name];
 
   useEffect(() => {
     const results = [];
