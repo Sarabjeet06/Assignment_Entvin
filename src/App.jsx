@@ -11,7 +11,7 @@ function App() {
       <div className="w-64 bg-gray-200"> {/* Set width and background color */}
         <Sidemenu />
       </div>
-      <div className='flex-1'>
+      <div className='flex-1 ml-[24px]'>
         <ReportComp />
       </div>
     </div>

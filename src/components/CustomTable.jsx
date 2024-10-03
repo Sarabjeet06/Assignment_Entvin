@@ -497,11 +497,11 @@ const CustomTable = ({ selectedOption, searchValue }) => {
         <TableHead>
           <TableRow>
             <StyledTableCell sx={{ width: '80px', height: '46px' }}>S. No</StyledTableCell> {/* Serial number column */}
-            <StyledTableCell sx={{ width: '326px', height: '46px' }}>abc</StyledTableCell>
-            <StyledTableCell align="left" sx={{ width: '162px', height: '46px' }}>abc</StyledTableCell>
-            <StyledTableCell align="left" sx={{ width: '80px', height: '46px' }}>abc</StyledTableCell>
-            <StyledTableCell align="left" sx={{ backgroundColor: '#7CC8FD !important', width: '300px', height: '46px' }}>abc</StyledTableCell>
-            <StyledTableCell align="left" sx={{ backgroundColor: '#B9E0FE !important', width: '300px', height: '46px' }}>abc</StyledTableCell>
+            <StyledTableCell sx={{ width: '326px', height: '46px' }}>Company (Innovator)</StyledTableCell>
+            <StyledTableCell align="left" sx={{ width: '161px', height: '46px' }}>2023 Revenue ($M)</StyledTableCell>
+            <StyledTableCell align="left" sx={{ width: '161px', height: '46px' }}>2022 Revenue ($M)</StyledTableCell>
+            <StyledTableCell align="left" sx={{ backgroundColor: '#7CC8FD !important', width: '300px', height: '46px' }}>R&D pipeline - Approved</StyledTableCell>
+            <StyledTableCell align="left" sx={{ backgroundColor: '#B9E0FE !important', width: '300px', height: '46px' }}>R&D pipeline</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -533,7 +533,7 @@ const CustomTable = ({ selectedOption, searchValue }) => {
                 <div>
                   <div>{row?.revenue22?.value}</div>
                 </div>
-                <div>{row?.revenue22?.curr}</div>
+                <div className='w-[101px] h-[24px] bg-[#FCFBFF] rounded-lg border'>{row?.revenue22?.curr}</div>
               </StyledTableCell>
               <StyledTableCell align="left">
                 {row?.approved?.imgSrc && <img src={row?.approved?.imgSrc} alt={row?.approved?.altValue} style={{ width: '20px', height: '20px' }} />}
