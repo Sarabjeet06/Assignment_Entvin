@@ -51,7 +51,7 @@ const CustomSelectMenu = ({ options, selectedOption, setSelectedOption }) => {
                         <div
                             key={index}
                             onClick={() => handleSelectChange(option)}
-                            className={`flex items-center px-[16px] py-[10px] hover:bg-[#4D4D4D33] cursor-pointer ${index !== options.length - 1 ? 'border-b border-gray-300' : ''
+                            className={`flex items-center text-[14px] leading-[18.9px] px-[16px] py-[12px] hover:bg-[#4D4D4D33] cursor-pointer ${index !== options.length - 1 ? 'border-b border-gray-300' : ''
                                 }`}
                         >
                             <img src={option.imgSrc} alt={option.altValue} className="mr-2" />

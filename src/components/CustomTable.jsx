@@ -534,8 +534,8 @@ const CustomTable = ({ selectedOption, searchValue }) => {
               </StyledTableCell>
               <StyledTableCell>
                 {row?.company?.imgSrc && <img src={row?.company?.imgSrc} alt={row?.company.altValue} style={{ width: '50px', height: '50px' }} />}
-                <div>{row?.company?.name}</div>
-                <div>{row?.company?.desc}</div>
+                <div className='text-[#1F1F1F] text-[16px] leading-[24px] font-[500]'>{row?.company?.name}</div>
+                <div className='text-[#4D4D4D] text-[12px] leading-[18.9px] font-[400]'>{row?.company?.desc}</div>
               </StyledTableCell>
               <StyledTableCell
                 sx={{
@@ -549,18 +549,18 @@ const CustomTable = ({ selectedOption, searchValue }) => {
                   <div>{row?.revenue23?.value}</div>
                   {row?.revenue23?.imgSrc && <img src={row?.revenue23?.imgSrc} style={{ width: '20px', height: '20px' }} alt="Revenue icon" />}
                 </div>
-                <div>{row.revenue23.curr}</div>
+                <div className='w-[101px] h-[24px] bg-[#FCFBFF] rounded-[20px] border text-[11px] py-[4px] px-[10px] leading-[16.2px]'>{row.revenue23.curr}</div>
               </StyledTableCell>
               <StyledTableCell sx={{ backgroundColor: 'lightblue' }} align="left">
                 <div>
                   <div>{row?.revenue22?.value}</div>
                 </div>
-                <div className='w-[101px] h-[24px] bg-[#FCFBFF] rounded-lg border'>{row?.revenue22?.curr}</div>
+                <div className='w-[101px] h-[24px] bg-[#FCFBFF] rounded-[20px] border text-[11px] py-[4px] px-[10px] leading-[16.2px]'>{row?.revenue22?.curr}</div>
               </StyledTableCell>
               <StyledTableCell align="left">
                 {row?.approved?.imgSrc && <img src={row?.approved?.imgSrc} alt={row?.approved?.altValue} style={{ width: '20px', height: '20px' }} />}
-                <div>{row?.approved?.name}</div>
-                <div>{row?.approved?.desc}</div>
+                <div className='text-[16px] leading-[24px] font-[500] text-[#1F1F1F]'>{row?.approved?.name}</div>
+                <div className='text-[14px] leading-[20px] text-[#4D4D4D] '>{row?.approved?.desc}</div>
               </StyledTableCell>
               <StyledTableCell align="left"></StyledTableCell>
             </StyledTableRow>
