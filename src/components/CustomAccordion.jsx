@@ -19,7 +19,7 @@ const CustomAccordion = ({ imgSrc, altValue, option, subOption }) => {
                         <div
                             className="absolute left-1/2 top-full bg-gray-300"
                             style={{
-                                width: '2px',
+                                width: '1px',
                                 height: `${subOption.length * 56 - 28}px`, // Manual adjustment for vertical line
                                 transform: 'translateX(-50%)', // Center the vertical line
                             }}
